@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Item = styled.div`
   background: white;
-  border: 1px solid ${props => props.theme.offWhite};
+  border: 1px solid ${props => props.theme.colors.gainsboro};
   box-shadow: ${props => props.theme.bs};
   position: relative;
   display: flex;
@@ -23,10 +23,10 @@ const Item = styled.div`
   .buttonList {
     display: grid;
     width: 100%;
-    border-top: 1px solid ${props => props.theme.lightgrey};
+    border-top: 1px solid ${props => props.theme.colors.grey};
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-gap: 1px;
-    background: ${props => props.theme.lightgrey};
+    background: ${props => props.theme.colors.grey};
     & > * {
       background: white;
       border: 0;
