@@ -57,7 +57,7 @@ const UpdateItem = props => {
       });
       console.log('updated!', res);
     } else {
-      console.log('You need to update something!');
+      alert('You need to update something!');
     }
   };
 
